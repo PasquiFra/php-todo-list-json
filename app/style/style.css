@@ -1,0 +1,50 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General */
+body {
+    background-color: rgb(185, 185, 185);
+}
+
+h1 {
+    text-align: center;
+    color: dodgerblue;
+    font-weight: 700;
+    font-size: 3rem;
+
+    padding: 25px 0;
+}
+
+/* utils */
+.container {
+    max-width: 820px;
+}
+
+.input-group {
+    margin-top: 25px;
+}
+
+button.btn {
+    background-color: dodgerblue;
+    color: white;
+}
+
+li {
+    justify-content: space-between;
+}
+
+.fa-check {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.fa-xmark {
+    font-size: 1.5rem;
+    color: red;
+}
