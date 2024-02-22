@@ -47,11 +47,11 @@
                         <span><i class="fa-solid" :class="{'fa-check': task.done, 'fa-xmark': !task.done}"></i></span>
                     </li>
                 </ul>
-                <div class="input-group mb-3">
+                <form class="input-group mb-3" @submit.prevent="callAxios('post')">
                     <input type="text" class="form-control" placeholder="Inserisci un elemento"
-                        aria-describedby="form-btn">
+                        aria-describedby="form-btn" name="task" v-model.trim="newTask">
                     <button class="btn" type="submit" id="form-btn">Aggiungi</button>
-                </div>
+                </form>
             </div>
         </main>
 
